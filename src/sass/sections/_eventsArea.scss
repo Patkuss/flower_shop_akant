@@ -1,0 +1,27 @@
+.events-area {
+    height: 500px;
+    position: relative;
+    background:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+    url(../images/event-bg.jpg);
+    background-position: bottom;
+	.product-details {
+        text-align: center;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        color: $primary-color2;
+        width: 100%;
+        max-width: 1800px;
+        h1 {
+            font-size: 50px;
+            text-transform: uppercase;
+            max-width: 1800px;
+        }
+        p {
+            font-size: 27px;
+            max-width: 1800px;
+        }
+	}
+}

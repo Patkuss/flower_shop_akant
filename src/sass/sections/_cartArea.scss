@@ -1,0 +1,145 @@
+.cart_area{
+	padding-top: 80px;
+	padding-bottom: 50px;
+}
+.price-area{
+	min-width: 60px;
+}
+
+
+.cart_inner{
+	.table{
+		tbody{
+			tr{
+				td{
+					padding-top: 10px;
+					padding-bottom: 10px;
+					vertical-align: middle;
+					align-self: center;
+					&:last-child{
+						max-width: 15px;
+						padding-left: 0;
+						padding-right: 0;
+					}
+					.media{
+						img{
+							display: block;
+                            max-width: 150px;
+							max-height: auto;
+							margin-left: auto;
+							margin-right: auto;
+						}
+						.media-body{
+							vertical-align: middle;
+							align-self: center;
+							text-align: center;
+							p{
+								margin-bottom: 0px;
+								font-weight: bold;
+							}
+						}
+					}
+					.magnified {
+						margin: 0;
+						text-transform: uppercase;
+						@media (max-width: 766px) {
+							text-align: center;
+						}
+					}
+					h5{
+						font-size: 14px;
+						color: black;
+						margin-bottom: 0px;
+					}
+					.product_count{
+						margin-bottom: 0px;
+						input{
+							width: 60px;
+							padding-left: 9px;
+							height: 40px;
+							outline: none;
+							box-shadow: none;
+						}
+						.increase{
+							top: -2px;
+							&:before{
+								content: "";
+								height: 40px;
+								width: 1px;
+								position: absolute;
+								left: -3px;
+								top: 0px;
+								background: #eeeeee;
+							}
+							&:after{
+								content: "";
+								height: 1px;
+								width: 30px;
+								position: absolute;
+								left: -3px;
+								top: 22px;
+								background: #eeeeee;
+							}
+						}
+						.reduced{
+							bottom: -2px;
+						}
+					}
+					.fa-times {
+						color: rgb(99, 0, 0);
+						font-size: 17px;
+						transition: $transition;
+						&:hover{
+							color: red;
+						}
+					}
+				}
+				&.out_button_area{
+					.checkout_btn_inner{
+						margin-top: 10px;
+						margin-left: -388px;
+					}
+				}
+			}
+		}
+	}
+}
+
+.product_count{
+	display: inline-block;
+	position: relative;
+	margin-bottom: 24px;
+	label{
+		font-size: 14px;
+		color: black;
+		font-weight: normal;
+		padding-right: 10px;
+	}
+	input{
+		width: 76px;
+		border: 1px solid #eeeeee;
+		border-radius: 3px;
+		padding-left: 10px;
+	}
+	button{
+		display: block;
+		border: none;
+		background: transparent;
+		box-shadow: none;
+		cursor: pointer;
+		position: absolute;
+		right: 0px;
+		font-size: 14px;
+		color: #cccccc;
+
+		&:hover{
+			color: black;
+		}
+	}
+	.increase{
+		top: -4px;
+	}
+	.reduced{
+		bottom: -8px;
+	}
+}

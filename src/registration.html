@@ -59,11 +59,7 @@
             </ul>
             <ul class="nav navbar-nav navbar-right">
               <li class="nav-item"><a href="login.html" class="nav-link"><i class="fas fa-user"></i></a></li>
-              <li class="nav-item">
-                <a href="cart.html" class="nav-link">
-                  <i class="fas fa-shopping-cart"></i>
-                </a>
-              </li>
+              <li class="nav-item"><a href="cart.html" class="nav-link"><i class="fas fa-shopping-cart"></i></a></li>
             </ul>
           </div>
         </div>
@@ -73,117 +69,57 @@
       <div class="container">
         <div class="row align-items-center justify-content-start">
           <div class="banner-content col-lg-6 subpage-banner">
-            <h1>Koszyk</h1>
+            <h1>Rejestracja</h1>
           </div>
         </div>
       </div>
     </section>
-    <section class="cart_area">
-      <div class="container">
-        <div class="cart_inner">
-          <div class="table-responsive">
-            <table class="table">
-              <tbody>
-                <tr>
-                  <td>
-                    <div class="media row">
-                      <div class="col-md-6">
-                        <img src="images/testowy.jpg" alt="">
-                      </div>
-                      <div class="media-body col-md-6">
-                        <p>Bukiet róż</p>
-                      </div>
-                    </div>
-                  </td>
-                  <td>
-                    <div class="product_count">
-                      <input type="text" name="qty" id="sst" maxlength="12" value="1" title="Quantity:" class="input-text qty">
-                      <button class="increase items-count" type="button"><i class="fas fa-angle-up"></i></button>
-                      <button class="reduced items-count" type="button"><i class="fas fa-angle-down"></i></button>
-                    </div>
-                  </td>
-                  <td>
-                    <div class="price-area">
-                      <h5>150.00 zł</h5>
-                    </div>
-                  </td>
-                  <td>
-                    <a href=""><i class="fas fa-times"></i></a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <div class="media row">
-                      <div class="col-md-6">
-                        <img src="images/testowy.jpg" alt="">
-                      </div>
-                      <div class="media-body col-md-6">
-                        <p>Bukiet róż</p>
-                      </div>
-                    </div>
-                  </td>
-                  <td>
-                    <div class="product_count">
-                      <input type="text" name="qty" id="sst" maxlength="12" value="1" title="Quantity:" class="input-text qty">
-                      <button class="increase items-count" type="button"><i class="fas fa-angle-up"></i></button>
-                      <button class="reduced items-count" type="button"><i class="fas fa-angle-down"></i></button>
-                    </div>
-                  </td>
-                  <td>
-                    <div class="price-area">
-                      <h5>150.00 zł</h5>
-                    </div>
-                  </td>
-                  <td>
-                    <a href=""><i class="fas fa-times"></i></a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <div class="media row">
-                      <div class="col-md-6">
-                        <img src="images/testowy.jpg" alt="">
-                      </div>
-                      <div class="media-body col-md-6">
-                        <p>Bukiet róż</p>
-                      </div>
-                    </div>
-                  </td>
-                  <td>
-                    <p class="magnified">bukiet powiększony:</p>
-                  </td>
-                  <td>
-                    <div class="price-area">
-                      <h5>250.00 zł</h5>
-                    </div>
-                  </td>
-                  <td>
-                    <a href=""><i class="fas fa-times"></i></a>
-                  </td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td>
-                    <h5>Razem:</h5>
-                  </td>
-                  <td>
-                    <h5>550.00 zł</h5>
-                  </td>
-                  <td></td>
-                </tr>
-                <tr class="out_button_area">
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td>
-                    <div class="checkout_btn_inner d-flex align-items-center">
-                      <a class="gray_btn" href="shop.html">Kontynuuj zakupy</a>
-                      <a class="primary-btn" href="order.html">Przejdź dalej</a>
-                    </div>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+    <section class="reg_box_area">
+      <div class="container d-flex justify-content-center">
+        <div class="col-lg-10">
+          <div class="regCard">
+            <h3>Dane do rejestracji</h3>
+            <form class="row login_form" id="regForm" novalidate="" action="" method="">
+              <div class="col-md-6 form-group">
+                <input type="text" class="form-control" id="first" name="imie" placeholder="Imię *" required>
+                <div class="invalid-feedback">To pole jest wymagane.</div>
+              </div>
+              <div class="col-md-6 form-group">
+                <input type="text" class="form-control" id="last" name="nazwisko" placeholder="Nazwisko *" required>
+                <div class="invalid-feedback">To pole jest wymagane.</div>
+              </div>
+              <div class="col-md-6 form-group">
+                <input type="text" class="form-control" id="number" name="numer" pattern="^[0-9]{9}$" placeholder="Numer telefonu *" required>
+                <div class="invalid-feedback">To pole jest wymagane.</div>
+              </div>
+              <div class="col-md-6 form-group">
+                <input type="email" class="form-control" id="email" name="email" placeholder="Adres e-mail *" required>
+                <div class="invalid-feedback">To pole jest wymagane.</div>
+              </div>
+              <div class="col-md-12 form-group">
+                <input type="password" class="form-control" id="passwordInputReg1" name="password" placeholder="Hasło *" required>
+                <div class="invalid-feedback">To pole jest wymagane.</div>
+              </div>
+              <div class="col-md-11 form-group">
+                <input type="password" class="form-control" id="passwordInputReg2" name="password" placeholder="Powtórz hasło *" required>
+                <div class="invalid-feedback">To pole jest wymagane.</div>
+              </div>
+              <div class="col-md-1 form-group passWrapper">
+                <div class="password-checkbox">
+                  <input type="checkbox" id="password-checkbox" name="selector" onclick="passwordHiderReg()">
+                  <label class="pointer" for="password-checkbox"></label>
+                </div>
+              </div>
+              <div class="col-md-12 form-group">
+                <div class="creat_account">
+                  <input type="checkbox" id="f-option2" name="selector">
+                  <label for="f-option2">Zapamiętaj mnie</label>
+                </div>
+              </div>
+              <div class="col-md-12 form-group">
+                <button type="submit" form="regForm" class="primary-btn">Zarejestruj się</button>
+              </div>
+            </form>
           </div>
         </div>
       </div>

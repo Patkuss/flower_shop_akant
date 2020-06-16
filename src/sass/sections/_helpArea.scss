@@ -1,0 +1,17 @@
+.helpCard{
+	box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.07);
+	height: 100%;
+	text-align: center;
+	padding-top: 60px;
+	button {
+		text-decoration: none;
+		color: $primary-color1;
+		&:hover {
+			color: $primary-color2;
+		}
+	}
+}
+
+.helpHeader {
+	padding-bottom: 60px;
+}

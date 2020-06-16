@@ -1,0 +1,52 @@
+.sidebar-categories {
+    box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.07);
+	.head {
+		line-height: 60px;
+		background: $primary-color2;;
+		padding: 0 30px;
+		font-size: 16px;
+		font-weight: 400;
+		color: #fff;
+	}
+	.main-categories {
+		padding: 0 20px;
+		background: $white;
+		box-shadow: 0 10px 10px rgba(153, 153, 153, 0.1);
+	}
+	.main-nav-list {
+		a {
+			font-size:14px;
+			display: block;
+			line-height: 50px;
+			padding-left: 10px;
+            border-bottom: 1px solid #eee;
+            color: black;
+			&:hover {
+				color: $primary-color1;
+			}
+			.number {
+				color: #cccccc;
+				margin-left: 10px;
+			}
+			.lnr {
+				margin-right: 10px;
+				display: none;
+			}
+		}
+		&.child {
+			a {
+				padding-left: 32px;
+			}
+		}
+	}
+}
+
+.shop-area {
+    padding: 100px 0;
+}
+
+@media (max-width: 767px) {
+	.lattest-product-area {
+		margin-top: 50px;
+	}
+}

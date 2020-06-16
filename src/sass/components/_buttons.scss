@@ -1,0 +1,30 @@
+.primary-btn{
+    line-height: 38px;
+    background: $primary-color1;
+    border: 1px solid #eeeeee;
+    border-radius: 3px;
+    padding: 0px 40px;
+    display: inline-block;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+    &:hover{
+        background-color: $primary-color2;
+        color: black;
+    }
+}
+
+.gray_btn{
+    line-height: 38px;
+    background: $primary-color3;
+    border: 1px solid #eeeeee;
+    border-radius: 3px;
+    padding: 0px 40px;
+    display: inline-block;
+    color: $primary-color1;
+    text-transform: uppercase;
+    font-weight: 500;
+    &:hover{
+        color: black;
+    }
+}

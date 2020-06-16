@@ -1,0 +1,105 @@
+.footer-area {
+    padding: 50px 0 50px 0;
+    background-color: #222222;
+    color: $primary-color2;
+    .row {
+        width: 100%;
+    }
+    h6 {
+        color: white;
+        text-shadow: 2px 2px 5px $primary-color1;
+        font-size: 18px;
+        text-transform: uppercase;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+}
+
+.footerSubscriptionArea {
+    span {
+        font-weight: bold;
+        font-size: 15px;
+    }
+}
+
+.footerContactArea {
+    span {
+        font-weight: bold;
+        font-size: 15px;
+    }
+    p {
+        margin: 0;
+    }
+}
+
+.agreement {
+    padding: 0;
+    margin-top: 10px;
+    .agreement-label {
+        margin-top: 10px;
+        font-size: 13px;
+        color: grey;
+    }
+}
+
+.single-footer-widget {
+    a {
+        color: $primary-color2;
+    }
+	@media (max-width: 991px) {
+		margin-bottom: 40px;
+	}
+	.form-inline {
+		display: inline-block;
+		width: 100%;
+	}
+	input {
+		border: none;
+		width: 80% !important;
+		font-weight: 300;
+		background: #fff;
+		color: #777;
+		padding-left: 20px;
+		border-radius: 0;
+		font-size: 14px;
+		&:focus {
+			outline: none;
+			box-shadow: none;
+		}
+	}
+
+	.bb-btn {
+		color: #fff;
+		font-weight: 300;
+		border-radius: 0;
+		z-index: 9999;
+		cursor: pointer;
+	}
+
+	.info {
+		position: absolute;
+		margin-top: 5%;
+		color: #fff;
+		font-size: 12px;
+		&.valid {
+			color: green;
+		}
+		&.error {
+			color: red;
+		}
+	}
+
+	.click-btn {
+        background-color: $primary-color2;
+		color: #fff;
+		border-radius: 0;
+		border-top-left-radius: 0px;
+		border-bottom-left-radius: 0px;
+		padding: 6px 12px;
+		border: 0;
+		&:focus {
+			outline: none;
+			box-shadow: none;
+		}
+	}
+}

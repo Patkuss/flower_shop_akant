@@ -1,0 +1,109 @@
+.login_box_area{
+    padding: 100px 0;
+}
+
+.cardBox{
+	box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.07);
+	height: 100%;
+	text-align: center;
+	padding-top: 100px;
+	padding-bottom: 40px;
+	h3{
+		color: black;
+		text-transform: uppercase;
+		font-size: 18px;
+		margin-bottom: 15px;
+		font-weight: bold;
+	}
+	.login_form{
+		max-width: 385px;
+		margin: auto;
+	}
+	&.reg_form{
+		padding-top: 60px;
+		h3{
+			margin-bottom: 70px;
+		}
+	}
+}
+
+.login_form{
+	.form-group{
+		input{
+			height: 54px;
+			border: none;
+			border-bottom: 1px solid #cccccc;
+			border-radius: 0px;
+			outline: none;
+			box-shadow: none;
+		}
+		.creat_account{
+			margin-top: 10px;
+			margin-bottom: 15px;
+			text-align: left;
+			input{
+				height: auto;
+				margin-right: 10px;
+			}
+		}
+		.primary-btn{
+			display: block;
+			border-radius: 0px;
+			line-height: 38px;
+			width: 100%;
+			text-transform: uppercase;
+			border: none;
+			&:hover{
+				&:before{
+					left: 370px;
+				}
+			}
+		}
+		a{
+			font-size: 14px;
+			color: black;
+			margin-top: 20px;
+			display: block;
+		}
+	}
+}
+
+.passWrapper {
+	margin-top: 10px;
+	padding-left: 0;
+	@media (max-width: 766px) {
+		margin-left: 30px;
+	}
+	.password-checkbox {
+		width: 27px;
+		height: 27px;
+		position: relative;
+		margin-top: 15px;
+		cursor: pointer;
+		input {
+			position: absolute;
+			left: 0;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			width: 100%;
+			opacity: 0;
+			+ .pointer {
+				background: url(../images/elements/eye-slash-regular.svg) no-repeat center center/cover;
+				position: absolute;
+				left: 0;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				width: 100%;
+				cursor: pointer;
+			}
+			&:checked {
+				+ .pointer {
+					background: url(../images/elements/eye-regular.svg) no-repeat center center/cover;
+					border: none;
+				}
+			}
+		}
+	}
+}
